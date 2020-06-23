@@ -34,24 +34,19 @@
     margin-right: 0px;
 }}
 .nav-menu {
+    $blue: #2196f3;
     position: relative;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    cursor: pointer;
-    
-    color: var(--black-color);
-    transition: color 250ms var(--timing-function);
+    @extend .roboto500;
+    @extend %cursor;
+    @extend %color-black;
+    @extend %transition-cubic;
     &:hover,
     &:focus {
-    color: var(--blue-color);
+    color: $blue;
 }}
 .current {
     color: var(--blue-color);
@@ -105,6 +100,4 @@
 .icon-header {
     margin-right: 10px;
     fill: currentColor;
-}     
-      
-      
+}

@@ -1,0 +1,24 @@
+%roboto500 {
+    font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+  }
+%cursor {
+    cursor: pointer;
+}
+
+%color-grey {
+    color: #757575;
+}
+%color-white {
+    color: #ffffff; 
+}
+%color-black {
+    color: #212121;
+}
+%transition-cubic {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
