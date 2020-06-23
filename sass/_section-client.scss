@@ -1,0 +1,39 @@
+.section-client {
+    display: flex;
+    flex-direction: column;
+    .logo-client {
+    display: flex;
+    
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 0;
+}}
+.logo-client-items {
+    margin-right: 30px;
+    &:last-child {
+    margin-right: 0;
+    }
+    .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    min-width: 170px;
+    border: 1px solid var(--grey-color);
+    border-radius: 4px;
+    transition: border 250ms var(--timing-function);
+    }
+    .icon:hover,
+    .icon:focus {
+    border: 1px solid var(--blue-color)
+    }
+    .icon:hover .logo-icon,
+    .icon:focus .logo-icon {
+    fill: var(--blue-color);
+}}
+.logo-icon {
+    fill: var(--grey-color);
+    transition: fill 250ms var(--timing-function);
+}
+  
+  

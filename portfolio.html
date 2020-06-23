@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Верстка№1</title>
 </head>
 
@@ -14,46 +14,51 @@
     <header>
         <!--Шапка сайта-->
         <div class="container-header container">
-            <nav class="items-nav">
-                <a href="./index.html" class="logo">Web <span class="studio-header"> Studio</span></a>
-                <ul class="nav-list">
-                    <li class="nav-list-item">
-                        <a href="./index.html" class="nav-menu">Студия</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="./portfolio.html" class="nav-menu current">Портфолио</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="" class="nav-menu">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="container-connection">
-                <ul class="container-connection-items">
-                    <li class="list-connection">
-                        <a href="mailto:info@devstudio.com" class="nav-contact cubic">
-                            <svg class="icon-header" width="16" height="11">
-                                <use href="./images/svg/symbol.svg#icon-envelope">
-                                </use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="list-connection">
-                        <a href="tel:+380961111111" class="nav-contact cubic">
-                            <svg class="icon-header" width="10" height="15">
-                                <use href="./images/svg/symbol.svg#icon-Vector">
-                                </use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    
+          <nav class="header-nav">
+            <a href="./index.html" class="logo">Web <span class="logo-studio"> Studio</span></a>
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a href="./index.html" class="nav-menu">Студия</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./portfolio.html" class="nav-menu current">Портфолио</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="" class="nav-menu">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+    
+          <div class="container-connection">
+            <ul class="container-connection-items">
+    
+              <li class="list-connection">
+                <a href="mailto:info@devstudio.com" class="nav-contact">
+                  <svg class="icon-header" width="16" height="11">
+                    <use href="./images/svg/symbol.svg#icon-envelope">
+                    </use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+    
+              <li class="list-connection">
+                <a href="tel:+380961111111" class="nav-contact">
+                  <svg class="icon-header" width="10" height="15">
+                    <use href="./images/svg/symbol.svg#icon-Vector">
+                    </use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+    
+            </ul>
+          </div>
+    
         </div>
-    </header>
-    <main class="main-portfolio">
-        <!-- MAIN -->
+      </header>
+    <main>
         <div class="section-portfolio container">
             <h1 class="visually-hidden">Заголовок h1, который скроется</h1>
             <ul class="portfolio-filter">
@@ -288,9 +293,15 @@
 
                 </div>
                 <div class="subscribe">
-                    <p class="footer-connect">подпишитесь на рассылку</p>
-                    <input class="subscribe-form" type="text" name="message" placeholder="E-mail" form="subscribe" />
-                    <button type="submit" class="button-subscribe" id="subscribe">Подписаться </button>
+
+                    <form action="" class="section-subscribe">
+                        <p class="footer-connect">подпишитесь на рассылку</p>
+                        <input class="subscribe-form" type="text" name="message" id="subscribe" placeholder="E-mail"
+                            form="subscribe" />
+                        <label for="subscribe"></label>
+                        <button type="submit" class="button-subscribe" id="subscribe">Подписаться </button>
+                    </form>
+
                 </div>
             </div>
         </div>

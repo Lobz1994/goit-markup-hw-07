@@ -1,0 +1,60 @@
+header {
+    border-bottom: 1px solid #ececec;
+  }
+.hero {
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1600px;
+    height: 600px;
+
+    background-color: gray;
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)),
+    url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+}}
+.h1-studio {
+    text-align: center;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+.section-hero-button {
+    margin-top: 46px;
+    text-align: center;
+    .button-hero {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px;
+    text-align: center;
+    background-color: #2196f3;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    cursor: pointer;
+}}
